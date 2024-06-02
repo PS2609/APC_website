@@ -1,0 +1,68 @@
+{
+    "events": [
+        {
+            "key":"event101",
+            "event": "Cosmoflare",
+            "id": "events",
+            "date":"9 March, 2023",
+            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "text":"Good event"
+        },
+        {
+            "key":"event102",
+            "event": "Event Name",
+            "id": "events",
+            "date":"9 March, 2023",
+            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "text":"Good event"
+        },
+        {
+            "key":"event103",
+            "event": "Event Name",
+            "id": "events",
+            "date":"9 March, 2023",
+            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "text":"Good event"
+        },
+        {
+            "key":"event104",
+            "event": "Event Name",
+            "id": "events",
+            "date":"9 March, 2023",
+            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "text":"Good event"
+        },
+        {
+            "key":"event105",
+            "event": "Event Name",
+            "id": "events",
+            "date":"9 March, 2023",
+            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "text":"Good event"
+        },
+        {
+            "key":"event106",
+            "event": "Event Name",
+            "id": "events",
+            "date":"9 March, 2023",
+            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "text":"Good event"
+        },
+        {
+            "key":"event107",
+            "event": "Event Name",
+            "id": "events",
+            "date":"9 March, 2023",
+            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "text":"Good event"
+        },
+        {
+            "key":"event108",
+            "event": "Event Name",
+            "id": "events",
+            "date":"9 March, 2023",
+            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "text":"Good event"
+        }
+    ]
+}
