@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import b from "../images/AP_LOGO.png"
 
 
 
 function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const navitems = (<>
     <li className="m-0 p-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Home</a></li>
     <li className="m-0 p-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Blogs</a></li>
@@ -13,7 +26,7 @@ function Navbar() {
   </>);
   return (
     <>
-      <div className='px-2 md:px-5 py-0 md:py-3 fixed top-0 left-0 right-0' style={{ backgroundColor: 'rgba(0, 0, 0, 0.9)' }}>
+      <div className='px-2 md:px-5 py-0 md:py-3 fixed top-0 left-0 right-0' style={{ backgroundColor: isScrolled ? 'rgba(0, 0, 0, 1)' : 'rgba(0, 0, 0, 0.6)' }}>
         <div className="navbar text-white">
           <div className="navbar-start">
             <div className="dropdown lg:hidden">
@@ -28,7 +41,7 @@ function Navbar() {
               <div className='order-1 w-full md:w-1/2 flex items-center px-0'>
                 <img src={b} alt="" className='w-16 h-16 mx-[2vw]' />
                 <div className='text-white text-xs md:text-base font-Monda'>
-                  <span className=" font-bold tracking-normal md:tracking-wider lg:tracking-widest text-nowrap">Astronomy & PARTICLE PHYSICS CLUB</span>
+                  <span className=" font-bold tracking-normal md:tracking-wider lg:tracking-widest text-nowrap">ASTRONOMY & PARTICLE PHYSICS CLUB</span>
                   <p className='tracking-wide md:tracking-wider lg:tracking-widest md:text-nowrap'>Indian Institute of Technology Patna (IITP)</p>
                 </div>
               </div>

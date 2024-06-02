@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         Monda: ["Monda", "sans-serif"],
       },
+      backgroundImage:{
+        'hero-bg':"url('./src/images/background1.png')"
+
+      },
     },
   },
   plugins: [require("daisyui")],
