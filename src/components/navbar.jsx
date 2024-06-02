@@ -18,15 +18,15 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const navitems = (<>
-    <li className="m-0 p-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Home</a></li>
-    <li className="m-0 p-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Blogs</a></li>
-    <li className="m-0 p-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Resources</a></li>
-    <li className="m-0 p-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Team</a></li>
-    <li className="m-0 p-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Gallery</a></li>
+    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Home</a></li>
+    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Blogs</a></li>
+    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Resources</a></li>
+    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Team</a></li>
+    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Gallery</a></li>
   </>);
   return (
     <>
-      <div className='px-2 md:px-5 py-0 md:py-3 fixed top-0 left-0 right-0' style={{ backgroundColor: isScrolled ? 'rgba(0, 0, 0, 1)' : 'rgba(0, 0, 0, 0.6)' }}>
+      <div className='px-2 md:px-5 py-0 z-20 fixed top-0 left-0 right-0' style={{ backgroundColor: isScrolled ? 'rgba(0, 0, 0, 1)' : 'rgba(0, 0, 0, 0.6)' }}>
         <div className="navbar text-white">
           <div className="navbar-start">
             <div className="dropdown lg:hidden">
