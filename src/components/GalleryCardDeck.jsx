@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import EventCard from './EventCard';
+import ActiveEvent from './ActiveEvent';
 
 const GallaryCardDeck = ({ title, subtitle }) => {
     const [data, setData] = useState([]);
@@ -7,6 +8,7 @@ const GallaryCardDeck = ({ title, subtitle }) => {
     const [error, setError] = useState(null);
     const [visiblePosts, setVisiblePosts] = useState(2);
     const [seeMoreButtonState, setSeeMoreButtonState] = useState(false);
+    const [activeEvent, setActiveEvent] = useState("none");
 
     useEffect(() => {
         fetch('src/assets/events_details.json') // Ensure this path is correct
@@ -53,6 +55,14 @@ const GallaryCardDeck = ({ title, subtitle }) => {
         }
     }
 
+    const handleClickEvent = (event) => {
+        console.log("event-clicked", event);
+        setActiveEvent(event)
+    }
+    const handleCollapseEvent = (event) => {
+        setActiveEvent("none");
+    }
+
     const backgroundUrl = "src/images/event_background.png";
     const backgroundSvg = "src/images/pink_square.svg";
 
@@ -75,18 +85,25 @@ const GallaryCardDeck = ({ title, subtitle }) => {
                             <div>Error: {error.message}</div>
                         ) : (
                             data.slice(0, visiblePosts).map((item) => {
-                                console.log(item);
-                                return (
-                                    <EventCard
-                                        key={item.key}
-                                        title={item.event}
-                                        imageUrl={item.image}
-                                        date={item.date}
-                                        text={item.text}
-                                        backgroundSvg={backgroundSvg}
-                                        backgroundUrl={backgroundUrl}
-                                    />
-                                )
+                                return (activeEvent === item.key) ?
+                                    (
+                                        <div key={item.key}>
+                                            <ActiveEvent eventObj={item} handleCloseButton={handleCollapseEvent} />
+                                        </div>
+                                    )
+                                    : (
+                                        <EventCard
+                                            id={item.key}
+                                            key={item.key}
+                                            title={item.event}
+                                            imageUrl={item.image}
+                                            date={item.date}
+                                            text={item.text}
+                                            backgroundSvg={backgroundSvg}
+                                            backgroundUrl={backgroundUrl}
+                                            onButtonClick={handleClickEvent}
+                                        />
+                                    )
                             })
                         )}
                     </div>
