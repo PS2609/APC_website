@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './components/navbar'
 import AboutUs from './components/aboutUs'
 import Banner1 from './components/banner1'
-
+import Club from './components/club'
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
       <Navbar />
       <Banner1 />
       <AboutUs/>
+      <Club/>
 
     </section>
 
