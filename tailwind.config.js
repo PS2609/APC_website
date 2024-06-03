@@ -11,6 +11,30 @@ export default {
       backgroundImage: {
         "hero-bg": "url('./src/images/background1.png')",
       },
+      keyframes: {
+        appear: {
+          "0%": {
+            opacity: "0.6",
+          },
+          "50%": {
+            opacity: "1",
+          },
+        },
+        glow: {
+          "30%, 70%": {
+            textShadow:
+              "0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 55px #ff00ff, 0 0 75px #ff00ff",
+          },
+          "50%": {
+            textShadow:
+              "0 0 2px #fff, 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 70px #ff00ff",
+          },
+        },
+      },
+      animation: {
+        glow: "glow 4s ease-in-out",
+        appear: "appear 4s ease-in-out",
+      },
     },
   },
   plugins: [
