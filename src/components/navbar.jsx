@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import b from "../images/AP_LOGO.png"
-
+import Gallery from './Gallery';
+import Banner1 from './banner1';
 
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [currentMenu, setCurrentMenu] = useState('home');
+
+  const handleClickMenu = (menu) => {
+    setCurrentMenu(menu);
+  }
 
   useEffect(() => {
 
@@ -18,11 +24,11 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const navitems = (<>
-    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Home</a></li>
-    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Blogs</a></li>
-    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Resources</a></li>
-    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Team</a></li>
-    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a className="" href='#'>Gallery</a></li>
+    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a onClick={() => handleClickMenu('home')} className="cursor-pointer">Home</a></li>
+    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a onClick={() => handleClickMenu('blog')} className=" cursor-pointer">Blogs</a></li>
+    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a onClick={() => handleClickMenu('resources')} className="cursor-pointer">Resources</a></li>
+    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a onClick={() => handleClickMenu('team')} className="cursor-pointer">Team</a></li>
+    <li className="m-0 px-1 text-[18px] font-semibold border-transparent hover:border-white border-b-4 transition-all w-1/2 duration-100"><a onClick={() => handleClickMenu('gallery')} className="cursor-pointer">Gallery</a></li>
   </>);
   return (
     <>
@@ -57,6 +63,8 @@ function Navbar() {
         </div>
 
       </div>
+      {(currentMenu === 'home') && <Banner1 />}
+      {(currentMenu === 'gallery') && <Gallery />}
     </>
   )
 }
