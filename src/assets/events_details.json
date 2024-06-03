@@ -6,7 +6,11 @@
             "id": "events",
             "date":"9 March, 2023",
             "image": "/src/images/event_images/IMG20240309125816.jpg",
-            "text":"Good event"
+            "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
+            "pictures": [
+                "src/images/event_images/IMG20240309125341.jpg",
+                "src/images/event_images/IMG20240309125348.jpg"
+            ]
         },
         {
             "key":"event102",
@@ -14,7 +18,11 @@
             "id": "events",
             "date":"9 March, 2023",
             "image": "/src/images/event_images/IMG20240309125816.jpg",
-            "text":"Good event"
+            "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
+            "pictures": [
+                "src/images/event_images/IMG20240309125341.jpg",
+                "src/images/event_images/IMG20240309125348.jpg"
+            ]
         },
         {
             "key":"event103",
@@ -22,7 +30,11 @@
             "id": "events",
             "date":"9 March, 2023",
             "image": "/src/images/event_images/IMG20240309125816.jpg",
-            "text":"Good event"
+            "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
+            "pictures": [
+                "src/images/event_images/IMG20240309125341.jpg",
+                "src/images/event_images/IMG20240309125348.jpg"
+            ]
         },
         {
             "key":"event104",
@@ -30,7 +42,11 @@
             "id": "events",
             "date":"9 March, 2023",
             "image": "/src/images/event_images/IMG20240309125816.jpg",
-            "text":"Good event"
+            "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
+            "pictures": [
+                "src/images/event_images/IMG20240309125341.jpg",
+                "src/images/event_images/IMG20240309125348.jpg"
+            ]
         },
         {
             "key":"event105",
@@ -38,7 +54,11 @@
             "id": "events",
             "date":"9 March, 2023",
             "image": "/src/images/event_images/IMG20240309125816.jpg",
-            "text":"Good event"
+            "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
+            "pictures": [
+                "src/images/event_images/IMG20240309125341.jpg",
+                "src/images/event_images/IMG20240309125348.jpg"
+            ]
         },
         {
             "key":"event106",
@@ -46,7 +66,11 @@
             "id": "events",
             "date":"9 March, 2023",
             "image": "/src/images/event_images/IMG20240309125816.jpg",
-            "text":"Good event"
+            "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
+            "pictures": [
+                "src/images/event_images/IMG20240309125341.jpg",
+                "src/images/event_images/IMG20240309125348.jpg"
+            ]
         },
         {
             "key":"event107",
@@ -54,7 +78,11 @@
             "id": "events",
             "date":"9 March, 2023",
             "image": "/src/images/event_images/IMG20240309125816.jpg",
-            "text":"Good event"
+            "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
+            "pictures": [
+                "src/images/event_images/IMG20240309125341.jpg",
+                "src/images/event_images/IMG20240309125348.jpg"
+            ]
         },
         {
             "key":"event108",
@@ -62,7 +90,11 @@
             "id": "events",
             "date":"9 March, 2023",
             "image": "/src/images/event_images/IMG20240309125816.jpg",
-            "text":"Good event"
+            "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
+            "pictures": [
+                "src/images/event_images/IMG20240309125341.jpg",
+                "src/images/event_images/IMG20240309125348.jpg"
+            ]
         }
     ]
 }

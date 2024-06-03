@@ -1,7 +1,7 @@
 // src/EventCard.js
 import React from 'react';
 
-const EventCard = ({ title, onButtonClick, imageUrl, backgroundUrl, backgroundSvg, date }) => (
+const EventCard = ({ title, onButtonClick, imageUrl, backgroundUrl, backgroundSvg, date, id }) => (
   <>
     <div className='block w-[220px] h-[193px] group'>
       <div className="relative flex flex-col justify-end rounded shadow-lg mx-auto my-2 w-[220px] h-[193px]">
@@ -16,7 +16,7 @@ const EventCard = ({ title, onButtonClick, imageUrl, backgroundUrl, backgroundSv
         ></div>
         <div
           className='relative z-10 w-[90%] h-[87%] rounded-sm overflow-hidden cursor-pointer'
-          onClick={onButtonClick}
+          onClick={() => onButtonClick(id)}
           style={{
             background: `url(${backgroundUrl})`,
             backgroundRepeat: "no-repeat",
@@ -46,7 +46,7 @@ const EventCard = ({ title, onButtonClick, imageUrl, backgroundUrl, backgroundSv
         ></div>
         <div
           className='relative z-10 flex flex-col justify-end rounded shadow-lg w-[337px] h-[297px] overflow-hidden'
-          onClick={onButtonClick}
+          onClick={() => onButtonClick(id)}
         >
           <div
             className='relative z-10 w-[90%] h-[85%] rounded-sm overflow-hidden'
