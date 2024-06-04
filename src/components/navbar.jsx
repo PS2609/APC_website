@@ -3,6 +3,7 @@ import b from "../images/AP_LOGO.png"
 import Gallery from './Gallery';
 import Banner1 from './banner1';
 import Resources from './Resources';
+import Home from './Home'
 
 
 function Navbar() {
@@ -64,7 +65,7 @@ function Navbar() {
         </div>
 
       </div>
-      {(currentMenu === 'home') && <Banner1 />}
+      {(currentMenu === 'home') && <><Banner1 /><Home/></>}
       {(currentMenu === 'gallery') && <Gallery />}
       {(currentMenu === 'resources') && <Resources />}
     </>
