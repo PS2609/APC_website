@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "id": "magazine1",
+            "img": "src/images/magazine_images/magazine1.png",
+            "url": ""
+        },
+        {
+            "id": "magazine2",
+            "img": "src/images/magazine_images/magazine2.png",
+            "url": ""
+        },
+        {
+            "id": "magazine3",
+            "img": "src/images/magazine_images/magazine2.png",
+            "url": ""
+        },
+        {
+            "id": "magazine4",
+            "img": "src/images/magazine_images/magazine1.png",
+            "url": ""
+        }
+    ]
+}
