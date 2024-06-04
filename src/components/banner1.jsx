@@ -6,7 +6,7 @@ function Banner1(){
     return (
        <>
        <div className='w-full  flex items-center px-0 py-0 '  >
-          <img src={astronaut} className="md:w-full w-full md:py-0" />
+          <img src={astronaut} className="md:w-full object-cover h-screen  w-full md:py-0" />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-304 text-white font-bold text-center">
           <h3 className='text-7xl md:3xl lg:7xl'>Welcome to APC !</h3>
         </div>
