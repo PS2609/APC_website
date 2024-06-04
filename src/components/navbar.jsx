@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import b from "../images/AP_LOGO.png"
 import Gallery from './Gallery';
 import Banner1 from './banner1';
+import Resources from './Resources';
 
 
 function Navbar() {
@@ -65,6 +66,7 @@ function Navbar() {
       </div>
       {(currentMenu === 'home') && <Banner1 />}
       {(currentMenu === 'gallery') && <Gallery />}
+      {(currentMenu === 'resources') && <Resources />}
     </>
   )
 }

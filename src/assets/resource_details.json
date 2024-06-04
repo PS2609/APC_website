@@ -1,0 +1,19 @@
+{
+    "resource": [
+        {
+            "id": "nstr_1",
+            "title": "Neutron Stars",
+            "img": "src/images/resources_images/neutron_star.png"
+        },
+        {
+            "id": "gwvs_1",
+            "title": "Gravitational Waves",
+            "img": "src/images/resources_images/grav_waves.png"
+        },
+        {
+            "id": "rocket_1",
+            "title": "PSLVs",
+            "img": "src/images/resources_images/rocket.png"
+        }
+    ]
+}
