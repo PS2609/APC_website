@@ -1,0 +1,28 @@
+{
+    "sessions": [
+        {
+            "id": "s1",
+            "title": "Session One",
+            "img": "src/images/sessions_images/session1.png",
+            "desc": "Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more."
+        },
+        {
+            "id": "s2",
+            "title": "Session Two",
+            "img": "src/images/sessions_images/session2.png",
+            "desc": "Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more."
+        },
+        {
+            "id": "s3",
+            "title": "Session Three",
+            "img": "src/images/sessions_images/session3.png",
+            "desc": "Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more."
+        },
+        {
+            "id": "s4",
+            "title": "Session Four",
+            "img": "src/images/sessions_images/session4.png",
+            "desc": "Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more."
+        }
+    ]
+}

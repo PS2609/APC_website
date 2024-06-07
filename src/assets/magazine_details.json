@@ -2,22 +2,30 @@
     "items": [
         {
             "id": "magazine1",
-            "img": "src/images/magazine_images/magazine1.png",
+            "title": "The Big Bang Buzz Vol. 1.",
+            "img": "src/images/magazine_images/magazine3.png",
+            "content": "src/images/magazine_images/magazine3-2.png",
             "url": ""
         },
         {
             "id": "magazine2",
-            "img": "src/images/magazine_images/magazine2.png",
+            "title": "The Big Bang Buzz Vol. 2.",
+            "img": "src/images/magazine_images/magazine4.png",
+            "content": "src/images/magazine_images/magazine3-2.png",
             "url": ""
         },
         {
             "id": "magazine3",
-            "img": "src/images/magazine_images/magazine2.png",
+            "title": "The Big Bang Buzz Vol. 3.",
+            "img": "src/images/magazine_images/magazine1.png",
+            "content": "src/images/magazine_images/magazine3-2.png",
             "url": ""
         },
         {
             "id": "magazine4",
-            "img": "src/images/magazine_images/magazine1.png",
+            "title": "The Big Bang Buzz Vol. 4.",
+            "img": "src/images/magazine_images/magazine2.png",
+            "content": "src/images/magazine_images/magazine3-2.png",
             "url": ""
         }
     ]
