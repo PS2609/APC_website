@@ -66,7 +66,7 @@ function Navbar() {
         </div>
 
       </div>
-      {(currentMenu === 'home') && <><Banner1 /><Home/></>}
+      {(currentMenu === 'home') && <><Banner1 /><Home /></>}
       {(currentMenu === 'gallery') && <Gallery />}
       {(currentMenu === 'resources') && <Resources />}
       {(currentMenu === 'team') && <Teams />}
