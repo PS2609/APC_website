@@ -2,23 +2,31 @@
     "items": [
         {
             "id": "magazine1",
-            "img": "src/images/magazine_images/magazine1.png",
-            "url": ""
+            "title": "The Big Bang Buzz Vol. 1.",
+            "img": "src/images/magazine_images/magazine3.png",
+            "content": "src/images/magazine_images/magazine3-2.png",
+            "url": "src/assets/TheBigBangBuzzVol2.pdf"
         },
         {
             "id": "magazine2",
-            "img": "src/images/magazine_images/magazine2.png",
-            "url": ""
+            "title": "The Big Bang Buzz Vol. 2.",
+            "img": "src/images/magazine_images/magazine4.png",
+            "content": "src/images/magazine_images/magazine3-2.png",
+            "url": "src/assets/TheBigBangBuzzVol2.pdf"
         },
         {
             "id": "magazine3",
-            "img": "src/images/magazine_images/magazine2.png",
-            "url": ""
+            "title": "The Big Bang Buzz Vol. 3.",
+            "img": "src/images/magazine_images/magazine1.png",
+            "content": "src/images/magazine_images/magazine3-2.png",
+            "url": "src/assets/TheBigBangBuzzVol2.pdf"
         },
         {
             "id": "magazine4",
-            "img": "src/images/magazine_images/magazine1.png",
-            "url": ""
+            "title": "The Big Bang Buzz Vol. 4.",
+            "img": "src/images/magazine_images/magazine2.png",
+            "content": "src/images/magazine_images/magazine3-2.png",
+            "url": "src/assets/TheBigBangBuzzVol2.pdf"
         }
     ]
 }
