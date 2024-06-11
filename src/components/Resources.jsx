@@ -1,5 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import MagReader from "./MagReader";
+import { saveAs } from "file-saver";
 
 const Resources = () => {
     return (
@@ -88,8 +90,8 @@ const Carousal = ({ data }) => {
 
     const slides = Array.from({ length: pages }, (_, index) => {
         return (index === visibleIndex)
-            ? <div className="flex flex-col justify-end"><div className="bg-white w-10 h-2 p-1 rounded-sm"></div></div>
-            : <div className="flex flex-col justify-end"><div className="bg-slate-400 w-10 h-2 p-1 rounded-sm"></div></div>
+            ? <div className="flex flex-col justify-end" key={index}><div className="bg-white w-10 h-2 p-1 rounded-sm"></div></div>
+            : <div className="flex flex-col justify-end" key={index}><div className="bg-slate-400 w-10 h-2 p-1 rounded-sm"></div></div>
     })
 
     const handleClickNext = () => {
@@ -282,7 +284,9 @@ const MagazineSection = () => {
     const [error, setError] = useState(null);
     const [visibleItems, setVisibleItems] = useState(1);
     const [seeMore, setSeeMore] = useState(false);
+    const [viewMag, setViewMag] = useState(null);
 
+    const magFilePath = "src/assets/TheBigBangBuzzVol2.pdf";
     const bgImagePath = 'src/images/resources_background.png';
     const title = "OUR MAGAZINE";
 
@@ -311,6 +315,14 @@ const MagazineSection = () => {
         };
     }, []);
 
+    const handleClickViewMag = (idx) => {
+        setViewMag(data[idx].url);
+        console.log(viewMag);
+    }
+    const handleClickClose = () => {
+        setViewMag(null);
+    }
+
     const handleVisibility = () => {
         if (window.innerWidth >= 1024) {
             setVisibleItems(2); // Display 2 magazine on desktop
@@ -325,52 +337,61 @@ const MagazineSection = () => {
         setSeeMore(!seeMore);
     }
 
+    const downloadMagazine = (idx) => {
+        const filePath = data[idx].url;
+        saveAs(filePath, "big_bang_buz.pdf");
+    }
+
     return (
-        <div className="w-full  overflow-clip" style={{
-            background: `url(${bgImagePath})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'fixed'
-        }}>
-            <div className="w-full p-2 py-16 bg-black bg-opacity-[0.3]">
-                <div className=" p-2 flex flex-col justify-center">
-                    <div className="p-2 flex flex-row justify-center md:ml-16">
-                        <div className="flex flex-col justify-center gap-3">
-                            <h1 className="font-bold text-3xl text-gradient tracking-widest text-center md:text-left">{title}</h1>
-                            <p className="font-bold text-white font-Mono tracking-wide text-center">Check out the magazine here</p>
+        <>
+            {viewMag && <MagReader filePath={viewMag} handleClickClose={handleClickClose} />}
+            <div className="w-full  overflow-clip" style={{
+                background: `url(${bgImagePath})`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundAttachment: 'fixed'
+            }}>
+
+                <div className="w-full p-2 py-16 bg-black bg-opacity-[0.3]">
+                    <div className=" p-2 flex flex-col justify-center">
+                        <div className="p-2 flex flex-row justify-center md:ml-16">
+                            <div className="flex flex-col justify-center gap-3">
+                                <h1 className="font-bold text-3xl text-gradient tracking-widest text-center md:text-left">{title}</h1>
+                                <p className="font-bold text-white font-Mono tracking-wide text-center">Check out the magazine here</p>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                    </div>
-                    <div className=" p-4 py-8 lg:mx-[10vw]">
-                        <div className=" p-2 flex flex-col md:flex-row flex-wrap gap-[10vw] justify-around">
-                            {loading ? (
-                                <div>Loading...</div>
-                            ) : error ? (
-                                <div>Error: {error.message}</div>
-                            ) : (
-                                data.map((cur, idx, arr) => {
-                                    return (seeMore || (idx < visibleItems))
-                                        ? <MagazineCard imgPath={cur.img} key={cur.id} title={cur.title} cImgPath={cur.content} />
-                                        : null;
-                                })
-                            )}
+                        <div>
                         </div>
-                        <div className='mt-16 flex flex-row justify-center'>
-                            <button onClick={handleClickSeeMore} className='flex flex-row justify-center gap-3 w-[156px] rounded-lg text-white text-lg font-bold text-nowrap p-[16px] bg-[#520000] tracking-wider'>
-                                <span className='my-auto'>{seeMore ? "See Less" : "See More"}</span>
-                                {!seeMore ? <img className='my-auto' src="src/images/down_arrow.png" alt="" /> : null}
-                            </button>
+                        <div className=" p-4 py-8 lg:mx-[10vw]">
+                            <div className=" p-2 flex flex-col md:flex-row flex-wrap gap-[10vw] justify-around">
+                                {loading ? (
+                                    <div>Loading...</div>
+                                ) : error ? (
+                                    <div>Error: {error.message}</div>
+                                ) : (
+                                    data.map((cur, idx, arr) => {
+                                        return (seeMore || (idx < visibleItems))
+                                            ? <MagazineCard imgPath={cur.img} key={cur.id} title={cur.title} cImgPath={cur.content} idx={idx} onClickListener={handleClickViewMag} handleClickSave={downloadMagazine} />
+                                            : null;
+                                    })
+                                )}
+                            </div>
+                            <div className='mt-16 flex flex-row justify-center'>
+                                <button onClick={handleClickSeeMore} className='flex flex-row justify-center gap-3 w-[156px] rounded-lg text-white text-lg font-bold text-nowrap p-[16px] bg-[#520000] tracking-wider'>
+                                    <span className='my-auto'>{seeMore ? "See Less" : "See More"}</span>
+                                    {!seeMore ? <img className='my-auto' src="src/images/down_arrow.png" alt="" /> : null}
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
-const MagazineCard = ({ title, imgPath, cImgPath, onClickListener }) => {
+const MagazineCard = ({ title, imgPath, cImgPath, onClickListener, idx, handleClickSave }) => {
     return (
         <div className="">
             <div className=" flex flex-col justify-center">
@@ -399,8 +420,8 @@ const MagazineCard = ({ title, imgPath, cImgPath, onClickListener }) => {
                     <div className="cursor-pointer rounded-xl  bg-white hover:bg-slate-200 px-2 py-1 w-[250px] lg:w-[300px] flex flex-row justify-evenly">
                         <img className="w-[20px] my-auto mr-1" src="src/images/left_dir.png" alt="" />
                         <img className="w-[20px] my-auto mr-1" src="src/images/right_dir.png" alt="" />
-                        <img className="w-[50px] my-auto mr-1" src="src/images/download.png" alt="" />
-                        <img className="w-[20px] my-auto mr-1" src="src/images/full_screen.png" alt="" />
+                        <img onClick={() => handleClickSave(idx)} className="w-[50px] my-auto mr-1" src="src/images/download.png" alt="" />
+                        <img onClick={() => onClickListener(idx)} className="w-[20px] my-auto mr-1" src="src/images/full_screen.png" alt="" />
                     </div>
                 </div>
             </div>

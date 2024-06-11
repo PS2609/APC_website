@@ -35,7 +35,7 @@ function Navbar() {
   </>);
   return (
     <>
-      <div className='px-2 md:px-5 py-0 z-20 fixed top-0 left-0 right-0' style={{ backgroundColor: isScrolled ? 'rgba(0, 0, 0, 1)' : 'rgba(0, 0, 0, 0.6)' }}>
+      <div className='px-2 md:px-5 py-0 z-[1000] fixed top-0 left-0 right-0' style={{ backgroundColor: isScrolled ? 'rgba(0, 0, 0, 1)' : 'rgba(0, 0, 0, 0.6)' }}>
         <div className="navbar text-white">
           <div className="navbar-start">
             <div className="dropdown lg:hidden">
