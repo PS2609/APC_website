@@ -7,6 +7,8 @@ export default {
         Monda: ["Monda", "sans-serif"],
         Goldman: ["Goldman", "sans-serif"],
         Montserrat: ["Montserrat", "sans-serif"],
+        Cutive: ["Cutive", "sans-serif"],
+        Mono: ["Roboto Mono", "sans-serif"],
       },
       backgroundImage: {
         "hero-bg": "url('./src/images/background1.png')",
@@ -20,37 +22,18 @@ export default {
         },
         "border-glow": {
           "0%": {
-            borderColor: "rgba(255, 255, 255, 0)",
-            borderRightColor: "rgba(255, 255, 255, 0.3)",
-            borderBottomColor: "rgba(255, 255, 255, 0.7)",
-            borderLeftColor: "rgba(255, 255, 255, 1)",
             boxShadow: "0 0 30px 15px rgba(255, 255, 255, 0.5)",
           },
           "25%": {
-            borderColor: "rgba(255, 255, 255, 0)",
-            borderBottomColor: "rgba(255, 255, 255, 0.3)",
-            borderLeftColor: "rgba(255, 255, 255, 0.7)",
-            borderTopColor: "rgba(255, 255, 255, 1)",
             boxShadow: "0 0 30px 15px rgba(255, 255, 255, 0.5)",
           },
           "50%": {
-            borderColor: "rgba(255, 255, 255, 0)",
-            borderLeftColor: "rgba(255, 255, 255, 0.3)",
-            borderTopColor: "rgba(255, 255, 255, 0.7)",
-            borderRightColor: "rgba(255, 255, 255, 1)",
             boxShadow: "0 0 30px 15px rgba(255, 255, 255, 0.5)",
           },
           "75%": {
-            borderColor: "rgba(255, 255, 255, 0)",
-            borderTopColor: "rgba(255, 255, 255, 0.3)",
-            borderRightColor: "rgba(255, 255, 255, 0.7)",
-            borderBottomColor: "rgba(255, 255, 255, 1)",
             boxShadow: "0 0 30px 15px rgba(255, 255, 255, 0.5)",
           },
           "100%": {
-            borderColor: "rgba(255, 255, 255, 0)",
-            borderBottomColor: "rgba(255, 255, 255, 0.5)",
-            borderLeftColor: "rgba(255, 255, 255, 1)",
             boxShadow: "0 0 30px 15px rgba(255, 255, 255, 0.5)",
           },
         },
@@ -101,6 +84,27 @@ export default {
             background: "linear-gradient(0deg, #000000, #ffffff)", // Define your gradient here
             "-webkit-background-clip": "text",
             "-webkit-text-fill-color": "transparent",
+          },
+          ".my-rotate-y-180": {
+            transform: "rotateY(180deg)",
+          },
+          ".preserve-3d": {
+            transformStyle: "preserve-3d",
+          },
+          ".perspective": {
+            perspective: "1000px",
+          },
+          ".backface-hidden": {
+            backfaceVisibility: "hidden",
+          },
+          ".swiper-wrapper": {
+            width: "100%",
+            "-webkit-transition-timing-function": "linear !important",
+            "transition-timing-function": "linear !important",
+            position: "relative",
+          },
+          ".swiper-pagination-bullet": {
+            background: "#4f46e5",
           },
         },
         ["responsive", "hover"]
