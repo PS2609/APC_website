@@ -15,11 +15,7 @@ function Banner1(){
             "The universe is a pretty big place. If it's just us, seems like an awful waste of space." <br className="text-md "/>- Carl Sagan
           </p>
         </div> 
-        <div className='container'>
-        <div className="container mx-auto text-center py-10">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">About Us</h1>
-                console.log("hey")</div>
-        </div>
+        
           </div>
        </>
     )
