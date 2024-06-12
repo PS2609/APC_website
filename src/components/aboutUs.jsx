@@ -8,8 +8,8 @@ const aboutUs = () => {
         <div className="aboutUs p-10 bg-black text-white   ">
             <div className="heading  text-center font-semibold text-[36px] my-7 ">
                 ABOUT US
-                <div className='bg-gradient-to-r from-[#7D80BF] to-[#81A456]   h-1 '>
-                </div>
+                <div className='bg-gradient-to-r from-[#7D80BF] to-[#81A456] w-[37%] sm:w-[50%]  md:w-[17%] mx-auto h-1  m-t'></div>
+               
             </div>
 
             <div className="content">
