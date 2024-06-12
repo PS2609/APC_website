@@ -5,6 +5,7 @@ import Banner1 from './banner1';
 import Resources from './Resources';
 import Home from './Home'
 import Teams from './teams';
+import Blogs from './Blogs';
 
 
 function Navbar() {
@@ -70,6 +71,7 @@ function Navbar() {
       {(currentMenu === 'gallery') && <Gallery />}
       {(currentMenu === 'resources') && <Resources />}
       {(currentMenu === 'team') && <Teams />}
+      {(currentMenu === 'blog') && <Blogs />}
     </>
   )
 }
