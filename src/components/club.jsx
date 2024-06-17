@@ -17,7 +17,7 @@ const club = () => {
                     
                 </div>
 
-                <div  className='w-[300px] md:w-[300px] h-[60px] rounded-sm flex  justify-center items-center   overflow-clip  text-lg'style={{ backgroundImage: `url(${rectangle13})`}}>WE PLAY </div>
+                <div  className='w-[300px] md:w-[300px] h-[60px] rounded-sm flex  justify-center items-center   overflow-clip  text-md'style={{ backgroundImage: `url(${rectangle13})`}}>WE PLAY </div>
             </div>
             <div className="card">
                 <div className="img">
@@ -25,7 +25,7 @@ const club = () => {
                     
                 </div>
 
-                <div  className=' w-[300px] md:w-[300px] h-[60px] rounded-sm flex  justify-center items-center my-2  overflow-clip  text-lg'style={{ backgroundImage: `url(${rectangle13})`}}>WE PLAY </div>
+                <div  className=' w-[300px] md:w-[300px] h-[60px] rounded-sm flex  justify-center items-center my-2  overflow-clip  text-md'style={{ backgroundImage: `url(${rectangle13})`}}>WE GRIND </div>
             </div>
             <div className="card">
                 <div className="img">
@@ -33,7 +33,7 @@ const club = () => {
                    
                 </div>
 
-                <div  className='w-[300px] md:w-[300px] h-[60px] rounded-sm flex  justify-center items-center my-2  overflow-clip  text-lg'style={{ backgroundImage: `url(${rectangle13})`}}>WE SHOWOFF!</div>
+                <div  className='w-[300px] md:w-[300px] h-[60px] rounded-sm flex  justify-center items-center my-2  overflow-clip  text-md'style={{ backgroundImage: `url(${rectangle13})`}}>WE SHOWOFF!</div>
             </div>
         </div>
     </div>

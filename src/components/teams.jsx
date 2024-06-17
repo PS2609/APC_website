@@ -32,7 +32,7 @@ const teams = () => {
             </div>
             <div className="O.C (2024-2025)">
                 <h1 className="text-[36px] text-center py-10 ">O.C (2024-2025)</h1>
-                <div className="profiles flex justify-center gap-8 flex-wrap ">
+                <div className="profiles flex justify-center  gap-8 flex-wrap ">
                     <Card image={Khushal_Yadav} name={"Khushal Yadav"} />
                 </div>
             </div>
@@ -48,10 +48,10 @@ const teams = () => {
                 <div className="sub-cordinator">
                     <h1 className="text-[36px] text-center py-10 ">SUB-COORDINATOR</h1>
                     <div className="profiles flex justify-center gap-8 flex-wrap ">
-                        <Card image={blankimage} name={"NAME"} />
-                        <Card image={blankimage} name={"NAME"} />
-                        <Card image={blankimage} name={"NAME"} />
-                        <Card image={blankimage} name={"NAME"} />
+                        <Card image={"src/images/TeamMembers/Ashmit Verma (E&O-Subcoord).jpg"} name={"Ashmit Verma"} />
+                        <Card image={"src/images/TeamMembers/Aditya_Prakash_Gupta(Edu-Outreach).jpg"} name={"Aditya Prakash Gupta"} />
+                        <Card image={"src/images/TeamMembers/shivang rayat education and outreach.jpg"} name={"Shivang Rayat"} />
+                        
                     </div>
                 </div>
             </div>
@@ -67,10 +67,10 @@ const teams = () => {
                 <div className="sub-cordinator">
                     <h1 className="text-[36px] text-center py-10 ">SUB-COORDINATOR</h1>
                     <div className="profiles flex justify-center gap-8 flex-wrap ">
-                        <Card image={blankimage} name={"NAME"} />
-                        <Card image={blankimage} name={"NAME"} />
-                        <Card image={blankimage} name={"NAME"} />
-                        <Card image={blankimage} name={"NAME"} />
+                        <Card image={"src/images/TeamMembers/Mayank_Singh_Events.jpg"} name={"Mayank Singh"} />
+                        <Card image={"src/images/TeamMembers/Parul Shrivastava ,  Events Committee.png"} name={"Parul Shrivastava"} />
+                        <Card image={"src/images/TeamMembers/vivek kumar events.png"} name={"Vivek Kumar"} />
+                        
                     </div>
                 </div>
             </div>
@@ -86,10 +86,9 @@ const teams = () => {
                 <div className="sub-cordinator">
                     <h1 className="text-[36px] text-center py-10 ">SUB-COORDINATOR</h1>
                     <div className="profiles flex justify-center gap-8 flex-wrap ">
-                        <Card image={blankimage} name={"NAME"} />
-                        <Card image={blankimage} name={"NAME"} />
-                        <Card image={blankimage} name={"NAME"} />
-                        <Card image={blankimage} name={"NAME"} />
+                        <Card image={"src/images/TeamMembers/Vinod_Singh_Rathore(PR&M).jpg"} name={"Vinod Singh Rathore"} />
+                        <Card image={"src/images/TeamMembers/Rahul_jilowa.jpg"} name={"Rahul Jilowa"} />
+                        <Card image={"src/images/TeamMembers/Supriya.jpg"} name={"Supriya Karnati"} />
                     </div>
                 </div>
             </div>
