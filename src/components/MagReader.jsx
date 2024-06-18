@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useCallback, forwardRef } from "react";
 import HTMLFlipBook from "react-pageflip";
-import { Document, Page, pdfjs } from "react-pdf";
+import { Document, Page } from "react-pdf";
+import { pdfjs } from 'react-pdf';
+
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 
