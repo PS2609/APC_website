@@ -30,9 +30,9 @@ const GallaryCardDeck = ({ title, subtitle }) => {
     }, []);
 
     const handleVisibility = () => {
-        if (window.innerWidth >= 1024) {
+        if (window.innerWidth > 1024) {
             setVisiblePosts(8); // Display 8 posts on desktop
-        } else if (window.innerWidth >= 768) {
+        } else if (window.innerWidth > 768) {
             setVisiblePosts(6); // Display 6 posts on tablet
         } else {
             setVisiblePosts(2); // Display 2 posts on mobile
@@ -42,17 +42,12 @@ const GallaryCardDeck = ({ title, subtitle }) => {
     const handleClickSeeMore = () => {
         if (seeMoreButtonState) {
             setSeeMoreButtonState(false);
-            if (window.innerWidth >= 1024) {
-                setVisiblePosts(8); // Display 8 posts on desktop
-            } else if (window.innerWidth >= 768) {
-                setVisiblePosts(6); // Display 6 posts on tablet
-            } else {
-                setVisiblePosts(2); // Display all posts on mobile
-            }
+            handleVisibility();
         } else {
             setSeeMoreButtonState(true);
             setVisiblePosts(data.length);
         }
+        console.log(visiblePosts, window.innerWidth)
     }
 
     const handleClickEvent = (event) => {
