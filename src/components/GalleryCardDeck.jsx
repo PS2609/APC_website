@@ -8,7 +8,8 @@ const GallaryCardDeck = ({ title, subtitle }) => {
     const [error, setError] = useState(null);
     const [visiblePosts, setVisiblePosts] = useState(2);
     const [seeMoreButtonState, setSeeMoreButtonState] = useState(false);
-    const [activeEvent, setActiveEvent] = useState("none");
+    const [activeEvent, setActiveEvent] = useState("Gallery");
+    const [isActive, setisActive] = useState(false);
 
     useEffect(() => {
         fetch('src/assets/events_details.json') // Ensure this path is correct
@@ -58,9 +59,11 @@ const GallaryCardDeck = ({ title, subtitle }) => {
     const handleClickEvent = (event) => {
         console.log("event-clicked", event);
         setActiveEvent(event)
+        setisActive(true);
     }
     const handleCollapseEvent = (event) => {
-        setActiveEvent("none");
+        setActiveEvent("Gallery");
+        setisActive(false);
     }
 
     const backgroundUrl = "src/images/event_background.png";
@@ -71,7 +74,7 @@ const GallaryCardDeck = ({ title, subtitle }) => {
             <div className="flex flex-col justify-center pt-[10vh] md:pt-[15vh] pb-5">
                 <div className="flex flex-col justify-center">
                     <h1 className="font-bold text-center text-4xl tracking-wider text-gradient">
-                        {title}
+                        {activeEvent}
                     </h1>
                     <p className="p-1 text-center tracking-widest text-white text-lg">
                         {subtitle}
@@ -85,14 +88,14 @@ const GallaryCardDeck = ({ title, subtitle }) => {
                             <div>Error: {error.message}</div>
                         ) : (
                             data.slice(0, visiblePosts).map((item) => {
-                                return (activeEvent === item.key) ?
+                                return (activeEvent === item.event) ?
                                     (
                                         <div key={item.key}>
                                             <ActiveEvent eventObj={item} handleCloseButton={handleCollapseEvent} />
                                         </div>
                                     )
                                     : (
-                                        <EventCard
+                                       !isActive &&  <EventCard
                                             id={item.key}
                                             key={item.key}
                                             title={item.event}
@@ -101,7 +104,7 @@ const GallaryCardDeck = ({ title, subtitle }) => {
                                             text={item.text}
                                             backgroundSvg={backgroundSvg}
                                             backgroundUrl={backgroundUrl}
-                                            onButtonClick={handleClickEvent}
+                                            onButtonClick={()=>{handleClickEvent(item.event)}}
                                         />
                                     )
                             })

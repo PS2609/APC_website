@@ -85,7 +85,7 @@ const Gallery = () => {
                 </div>
             </div>
             <GalleryCardDeck title={"Gallery"} subtitle={"Images that tell story"} />
-            <GalleryCardDeck title={"Astrophotography Gallery"} />
+            {/* <GalleryCardDeck title={"Astrophotography Gallery"} /> */}
         </>
     );
 }
