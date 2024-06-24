@@ -47,6 +47,7 @@ const Gallery = () => {
 
     const handleIndicatorClick = (pageNumber) => {
         setFade(true);
+        console.log(`clicked ${pageNumber}`)
         setTimeout(() => {
             setCurrentPage(pageNumber);
             setFade(false);
@@ -142,7 +143,7 @@ const Gallery = () => {
                         ))}
                     </div>
                 </div>
-                <div className="absolute z-10 hidden md:block bottom-[10vh] right-[5vw]  w-[500px] xl:w-[670px] h-[500px] overflow-clip">
+                <div className="absolute  z-10 hidden md:block bottom-[10vh] right-[5vw]  w-[500px] xl:w-[670px] h-[500px] overflow-clip">
                     <div className="flex flex-col justify-center h-[100%]">
                         <div {...handlers} className={`flex flex-row justify-start  gap-[20px] transition-transform ${fade ? "duration-300" : "duration-200"}`} style={{ transform: `translateX(${isSwiping ? swipeDelta / 1.2 - currentPage * 340 : -currentPage * 340}px)` }}>
                             {pages.map((card, idx) => (

@@ -24,7 +24,7 @@ const EventCard = ({ title, onButtonClick, imageUrl, backgroundUrl, backgroundSv
           }}
         >
           <div className='w-full h-full rounded-sm overflow-hidden flex flex-col justify-center'>
-            <img className='mt-2 mx-auto w-[90%] h-[65%]' src={imageUrl} alt="" />
+            <img className='mt-2 mx-auto w-[90%] h-[65%] object-cover' src={imageUrl} alt="" />
             <div className='my-auto'>
               <p className='font-Goldman text-nowrap text-center text-bold text-white opacity-[0.9]'>{title}</p>
               <p className='font-Montserrat text-[#ead793] text-xs text-center text-bold opacity-[0.7] hidden group-hover:block'>{date}</p>
