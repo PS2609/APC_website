@@ -2,98 +2,183 @@
     "events": [
         {
             "key":"event101",
-            "event": "Cosmoflare",
+            "event": "Session",
             "id": "events",
             "date":"9 March, 2023",
-            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "image": "src/images/event_images/Session/1718087701240.jpg",
             "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
             "pictures": [
-                "src/images/event_images/IMG20240309125341.jpg",
-                "src/images/event_images/IMG20240309125348.jpg"
+                "src/images/event_images/Session/1718087701240.jpg",
+                "src/images/event_images/Session/Online session.jpg"
             ]
         },
         {
             "key":"event102",
-            "event": "Event Name",
+            "event": "Club Trip",
             "id": "events",
             "date":"9 March, 2023",
-            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "image": "src/images/event_images/Club Trip/1718065818263.jpg",
             "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
             "pictures": [
-                "src/images/event_images/IMG20240309125341.jpg",
-                "src/images/event_images/IMG20240309125348.jpg"
+               "src/images/event_images/Club Trip/1718065817896.jpg",
+               "src/images/event_images/Club Trip/1718065817927.jpg",
+               "src/images/event_images/Club Trip/1718065818021.jpg",
+                "src/images/event_images/Club Trip/1718065375277.jpg",
+                "src/images/event_images/Club Trip/1718065375297.jpg",
+                "src/images/event_images/Club Trip/1718065817851.jpg",
+                "src/images/event_images/Club Trip/1718065817877.jpg",
+                "src/images/event_images/Club Trip/_storage_emulated_0_Android_data_com.miui.gallery_cache_SecurityShare_1718065817913.jpg",
+                
+                "src/images/event_images/Club Trip/1718065817942.jpg",
+                "src/images/event_images/Club Trip/1718065817959.jpg",
+                "src/images/event_images/Club Trip/1718065817973.jpg",
+                "src/images/event_images/Club Trip/1718065817990.jpg",
+                "src/images/event_images/Club Trip/1718065818007.jpg",
+                
+                "src/images/event_images/Club Trip/1718065818039.jpg",
+                "src/images/event_images/Club Trip/1718065818053.jpg",
+                "src/images/event_images/Club Trip/1718065818068.jpg",
+                "src/images/event_images/Club Trip/1718065818082.jpg",
+                "src/images/event_images/Club Trip/1718065818097.jpg",
+                "src/images/event_images/Club Trip/1718065818113.jpg",
+                "src/images/event_images/Club Trip/1718065818127.jpg",
+                "src/images/event_images/Club Trip/1718065818141.jpg",
+                "src/images/event_images/Club Trip/1718065818234.jpg",
+                "src/images/event_images/Club Trip/1718065818170.jpg",
+                "src/images/event_images/Club Trip/1718065818185.jpg",
+                "src/images/event_images/Club Trip/1718065818249.jpg",
+                "src/images/event_images/Club Trip/1718065818203.jpg",
+                "src/images/event_images/Club Trip/1718065818218.jpg",
+                "src/images/event_images/Club Trip/1718065818155.jpg",
+                "src/images/event_images/Club Trip/1718065818263.jpg",
+                "src/images/event_images/Club Trip/1718065818339.jpg",
+                "src/images/event_images/Club Trip/1718065818279.jpg",
+                "src/images/event_images/Club Trip/1718065818293.jpg",
+                "src/images/event_images/Club Trip/1718065818321.jpg"
             ]
         },
         {
             "key":"event103",
-            "event": "Event Name",
+            "event": "Cosmoflare",
             "id": "events",
             "date":"9 March, 2023",
-            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "image": "src/images/event_images/Cosmoflare/1718107271752.jpg",
             "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
             "pictures": [
-                "src/images/event_images/IMG20240309125341.jpg",
-                "src/images/event_images/IMG20240309125348.jpg"
+                "src/images/event_images/Cosmoflare/1718107271752.jpg"
             ]
         },
         {
             "key":"event104",
-            "event": "Event Name",
+            "event": "Guest Lecture",
             "id": "events",
             "date":"9 March, 2023",
-            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "image":"src/images/event_images/Guest Lecture/IMG20240309163339.jpg",
             "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
             "pictures": [
-                "src/images/event_images/IMG20240309125341.jpg",
-                "src/images/event_images/IMG20240309125348.jpg"
+                "src/images/event_images/Guest Lecture/IMG20240309161919.jpg",
+                "src/images/event_images/Guest Lecture/IMG20240309162047.jpg",
+                "src/images/event_images/Guest Lecture/IMG20240309162222.jpg",
+                "src/images/event_images/Guest Lecture/IMG20240309163339.jpg",
+                "src/images/event_images/Guest Lecture/IMG20240309170901.jpg"
             ]
         },
         {
             "key":"event105",
-            "event": "Event Name",
+            "event": "Magazine",
             "id": "events",
             "date":"9 March, 2023",
-            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "image": "src/images/event_images/Magazine/1718088002791.jpg",
             "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
             "pictures": [
-                "src/images/event_images/IMG20240309125341.jpg",
-                "src/images/event_images/IMG20240309125348.jpg"
+                "src/images/event_images/Magazine/1718088002705.jpg",
+                "src/images/event_images/Magazine/1718088002724.jpg",
+                "src/images/event_images/Magazine/1718088002741.jpg",
+                "src/images/event_images/Magazine/1718088002758.jpg",
+                "src/images/event_images/Magazine/1718088002775.jpg",
+                "src/images/event_images/Magazine/1718088002791.jpg"
             ]
         },
         {
             "key":"event106",
-            "event": "Event Name",
+            "event": "MTH",
             "id": "events",
             "date":"9 March, 2023",
-            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "image": "src/images/event_images/Mth/1718106880979.jpg",
             "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
             "pictures": [
-                "src/images/event_images/IMG20240309125341.jpg",
-                "src/images/event_images/IMG20240309125348.jpg"
+                "src/images/event_images/Mth/1718106880931.jpg",
+                "src/images/event_images/Mth/1718106880948.jpg",
+                "src/images/event_images/Mth/1718106880963.jpg",
+                "src/images/event_images/Mth/1718106880979.jpg",
+                "src/images/event_images/Mth/1718106880993.jpg",
+                "src/images/event_images/Mth/1718106881007.jpg",
+                "src/images/event_images/Mth/1718107239183.jpg",
+                "src/images/event_images/Mth/1718107239202.jpg",
+                "src/images/event_images/Mth/1718107239220.jpg",
+                "src/images/event_images/Mth/1718107239239.jpg",
+                "src/images/event_images/Mth/1718107239257.jpg",
+                "src/images/event_images/Mth/1718107239277.jpg",
+                "src/images/event_images/Mth/1718107239298.jpg",
+                "src/images/event_images/Mth/1718107239317.jpg",
+                "src/images/event_images/Mth/1718107239336.jpg"
+
             ]
         },
         {
             "key":"event107",
-            "event": "Event Name",
+            "event": "Offline Movie Night",
             "id": "events",
             "date":"9 March, 2023",
-            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "image": "src/images/event_images/Offline Movie Night/Online movie night.jpg",
             "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
             "pictures": [
-                "src/images/event_images/IMG20240309125341.jpg",
-                "src/images/event_images/IMG20240309125348.jpg"
+
+                "src/images/event_images/Offline Movie Night/1718087208813.jpg",
+                "src/images/event_images/Offline Movie Night/1718087208847.jpg",
+                "src/images/event_images/Offline Movie Night/1718087208832.jpg",
+                "src/images/event_images/Offline Movie Night/1718066419461.jpg",
+               
+                "src/images/event_images/Offline Movie Night/1718065976308.jpg",
+                
+                "src/images/event_images/Offline Movie Night/Edge of tomorrow.jpg",
+                "src/images/event_images/Offline Movie Night/Online movie night.jpg"
+
             ]
         },
         {
             "key":"event108",
-            "event": "Event Name",
+            "event": "Telescope Session",
             "id": "events",
             "date":"9 March, 2023",
-            "image": "/src/images/event_images/IMG20240309125816.jpg",
+            "image": "src/images/event_images/Telescope Session/1718064643903.jpg",
             "text":"Cosmoflare is the annual fest of the Astronomy and Particle Physics Club at IIT Patna. It is a festival full of enjoyment and entertainment. It includes exhibitions, quizzes, guest lectures, practical sessions, and much more.",
             "pictures": [
-                "src/images/event_images/IMG20240309125341.jpg",
-                "src/images/event_images/IMG20240309125348.jpg"
+
+                "src/images/event_images/Telescope Session/1718064643889.jpg",
+                "src/images/event_images/Telescope Session/1718064643903.jpg",
+
+                "src/images/event_images/Telescope Session/1718064643929.jpg",
+                "src/images/event_images/Telescope Session/1718064643943.jpg",
+                "src/images/event_images/Telescope Session/1718066071369.jpg",
+                "src/images/event_images/Telescope Session/1718066071396.jpg",
+                "src/images/event_images/Telescope Session/1718066071415.jpg",
+                "src/images/event_images/Telescope Session/1718107020099.jpg",
+                "src/images/event_images/Telescope Session/1718107020115.jpg",
+                "src/images/event_images/Telescope Session/1718107020045.jpg",
+                "src/images/event_images/Telescope Session/1718107020063.jpg",
+                "src/images/event_images/Telescope Session/1718107020082.jpg",
+                
+                "src/images/event_images/Telescope Session/IMG20230827001108.jpg",
+                "src/images/event_images/Telescope Session/IMG20240229233527.jpg",
+                "src/images/event_images/Telescope Session/IMG20240229235420.jpg",
+                "src/images/event_images/Telescope Session/IMG20240229235427.jpg",
+                "src/images/event_images/Telescope Session/IMG20240229235439.jpg",
+
+                "src/images/event_images/Telescope Session/_storage_emulated_0_Android_data_com.miui.gallery_cache_SecurityShare_1718107020022.jpg",
+                "src/images/event_images/Telescope Session/Snapchat-1215659755.jpg",
+                "src/images/event_images/Telescope Session/1718064643916.jpg"
+            
             ]
         }
     ]
