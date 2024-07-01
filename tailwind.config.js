@@ -13,6 +13,14 @@ export default {
       backgroundImage: {
         "hero-bg": "url('./src/images/background1.png')",
       },
+      screens: {
+        'vsm': '500px',
+        'sm':"640px",
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
       keyframes: {
         glow: {
           "0%, 100%": { boxShadow: "0 0 0 0 rgba(255, 255, 255, 0)" },

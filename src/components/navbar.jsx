@@ -6,6 +6,7 @@ import Resources from './Resources';
 import Home from './Home'
 import Teams from './teams';
 import Blogs from './Blogs';
+import Footer from './footer';
 
 
 function Navbar() {
@@ -72,6 +73,7 @@ function Navbar() {
       {(currentMenu === 'resources') && <Resources />}
       {(currentMenu === 'team') && <Teams />}
       {(currentMenu === 'blog') && <Blogs />}
+      <Footer handleClickMenu={handleClickMenu}/>
     </>
   )
 }
