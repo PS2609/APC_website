@@ -9,6 +9,7 @@ function App() {
     <section className='bg-hero-bg h-screen bg-center bg-cover'>
       <Navbar />
     </section>
+    
   </>
   )
 }
