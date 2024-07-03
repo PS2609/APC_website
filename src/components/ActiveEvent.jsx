@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FileReader } from 'react-file-reader';
 
 const ActiveEvent = ({ eventObj, handleCloseButton }) => {
     return (
