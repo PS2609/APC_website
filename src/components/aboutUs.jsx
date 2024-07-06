@@ -45,7 +45,7 @@ const aboutUs = () => {
                 </div>
             </div>
             <div className="joinCommunity flex justify-center ">
-                <button className='w-[47.94] bg-white text-black px-5 py-3 h-[45] gap-2 items-center flex rounded-3xl' ><img src={joinsvg} width={20} />Join Community</button>
+                <a href="#footer"><button className='w-[47.94] bg-white text-black px-5 py-3 h-[45] gap-2 items-center flex rounded-3xl' ><img src={joinsvg} width={20} />Join Community</button></a>
             </div>
         </div>
     )
