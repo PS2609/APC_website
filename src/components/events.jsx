@@ -12,7 +12,7 @@ const events = () => {
                 <div className="events text-[13px] md:text-[25px] text-red-700">No Upcoming Events </div>
 
             </div>
-            <div className="card-container flex justify-center flex-wrap gap-5  ">
+            {/* <div className="card-container flex justify-center flex-wrap gap-5  ">
                 <div className="card w-[400px] sm:h-[290px]  bg-white  p-3 rounded-none ">
                     <div className=" sm:flex ">
                         <img src={Rectangle9} className='w-[380px] sm:w-[200px]' alt="" />
@@ -28,7 +28,7 @@ const events = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
